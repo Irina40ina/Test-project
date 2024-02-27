@@ -1,9 +1,22 @@
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+.slide-item {
+    animation: mymove 5s infinite;
+}
 .container {
     background-color: gray;
     border: 1px solid black;
 }
 
-.widget{
+.widget {
     border: 1px solid black;
     background-color: white;
 }
