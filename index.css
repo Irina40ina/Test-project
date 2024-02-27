@@ -11,3 +11,12 @@
 .slide-item {
     animation: mymove 5s infinite;
 }
+.container {
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.widget {
+    border: 1px solid black;
+    background-color: white;
+}
