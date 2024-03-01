@@ -1,4 +1,4 @@
-@keyframes mymove {
+/* @keyframes mymove {
     from {
         background-color: red;
     }
@@ -10,13 +10,86 @@
 
 .slide-item {
     animation: mymove 5s infinite;
-}
-.container {
-    background-color: gray;
-    border: 1px solid black;
+} */
+:root {
+    --color: #F2F2F2;
 }
 
-.widget {
-    border: 1px solid black;
-    background-color: white;
+.main-container {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+}
+
+.content-container {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+.nav-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 65%;
+    height: 100px;
+    margin: 40px 0 90px 0;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    /* border: 1px solid black; */
+    background-color: var(--color);
+}
+
+.logo {
+    margin-left: 6%;
+}
+
+.nav-btn {
+    margin-right: 4%;
+}
+
+.slide-wrapper {
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid black; */
+    background-color: var(--color);
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.project-container {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container-title {
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    background-color: var(--color);
+}
+
+h1 {
+    text-align: center;
+    color: #687B78;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.project-container-galary {
+
+    width: 100%;
+    height: 800px;
+    background-color: var(--color);
+
+}
+
+.galary-item {
+    width: 14%;
+    height: 30%;
 }
