@@ -13,13 +13,15 @@
 } */
 :root {
     --color: #F2F2F2;
+    --color-2: #D9D9D9;
+    --shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .main-container {
     width: 100%;
     height: max-content;
     margin: 0 auto;
-    background-color: #D9D9D9;
+    background-color: var(--color-2);
 }
 
 .content-container {
@@ -29,7 +31,6 @@
     flex-direction: column;
     align-items: center;
     /* border: 1px solid black; */
-
 }
 
 .nav-container {
@@ -37,19 +38,23 @@
     align-content: center;
     justify-content: space-between;
     width: 65%;
-    height: 100px;
+    height: 10%;
     margin: 40px 0 90px 0;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
     /* border: 1px solid black; */
     background-color: var(--color);
 }
 
 .logo {
     margin-left: 6%;
+    width: 12.5%;
 }
 
 .nav-btn {
+    width: 2.5%;
     margin-right: 4%;
+    cursor: pointer;
 }
 
 .slide-wrapper {
@@ -57,7 +62,7 @@
     height: 700px;
     /* border: 1px solid black; */
     background-color: var(--color);
-    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow);
 }
 
 .project-container {
@@ -70,7 +75,7 @@
 
 .project-container-title {
     width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow);
     background-color: var(--color);
 }
 
@@ -82,14 +87,22 @@ h1 {
 }
 
 .project-container-galary {
-
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14%;
+    grid-template-rows: 31% 31%;
+    gap: 40px 40px;
     width: 100%;
     height: 800px;
+    padding: 0 3rem;
     background-color: var(--color);
-
 }
-
+.galary-item__container {
+    width: 100%;
+    height: 100%;
+}
 .galary-item {
-    width: 14%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
